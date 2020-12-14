@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="ch" class="ie6"><![endif]-->
+<!--[if IE 7]>
+<html lang="ch" class="ie7"><![endif]-->
+<!--[if IE 8]>
+<html lang="ch" class="ie8"><![endif]-->
+<!--[if IE 9]>
+<html lang="ch" class="ie9"><![endif]-->
+<!--[if!IE]><!-->
+<html lang="ch"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>苗族建筑介绍</title>
+</head>
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/modernizr.2.5.3.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+    function pageTo(num) {
+        $("#flipbook").turn("page", num);
+    }
+
+    $(function () {
+        function loadBook() {
+            $("#flipbook").turn({
+                width: 1050,
+                page: 1,
+                pages: 72,
+                height: 700,
+                autoCenter: true,
+                duration: 1500,
+                when: {
+                    turned: function (event, page, newPage) {
+                        if (page === 1) {
+                            /*添加页面*/
+                            for (let i = 2; i <= 68; i++) {
+                                newPage = $(" <div>\n" +
+                                    "            <div class=\"pic-page\">\n" +
+                                    "                <img src=\"../turn_img/miao_img/" + i + ".jpg\" alt=\" \" width=\"525\" height=\"700\">\n" +
+                                    "            </div>\n" +
+                                    "        </div>");
+
+                                $("#flipbook").turn("addPage", newPage, i + 2);
+                            }
+                        }
+                    }
+                },
+            });
+        }
+
+        yepnope({
+            test: Modernizr.csstransforms,
+            yep: ['../lib/turn.min.js'],
+            nope: ['../lib/turn.html4.min.js'],
+            complete: loadBook
+        });
+
+        /*向前翻页的函数*/
+        $("#pre").on("click", function () {
+            $("#flipbook").turn("previous");
+        });
+
+        /*向后翻页的函数*/
+        $("#nex").on("click", function () {
+            $("#flipbook").turn("next");
+        });
+
+        $("#home").on("click", function () {
+            location.href = "../index.html";
+        });
+    })
+
+</script>
+
+<body>
+
+<div class="btn-group" style="left: 50%">
+    <button type="button" class="btn btn-secondary" id="pre">上一页</button>
+    <button type="button" class="btn btn-secondary" id="nex">下一页</button>
+    <button type="button" class="btn btn-secondary" disabled>跳转到</button>
+    <a href="javascript:pageTo(1)" class="btn btn-secondary" role="button">封面</a>
+    <a href="javascript:pageTo(2)" class="btn btn-secondary" role="button">目录</a>
+    <a href="javascript:pageTo(72)" class="btn btn-secondary" role="button">封底</a>
+    <button type="button" class="btn btn-secondary" id="home">返回主页</button>
+</div>
+
+<div class="container">
+    <div id="flipbook">
+        <!--封面-->
+        <div class="hard">
+            <div class="pic-page">
+                <img src="../turn_img/miao_img/1.jpg" alt=" " width="525" height="700"/>
+            </div>
+        </div>
+        <div class="hard">
+            <div class="pic-page">
+                <img src="../turn_img/backgr.jpg" alt=" " width="525" height="700">
+            </div>
+        </div>
+        <!--目录-->
+        <div>
+            <div class="my-content">
+                <h3>目录</h3>
+                <div class="list-group" style="left: 50%">
+                    <a href="javascript:pageTo(4)" class="list-group-item list-group-item-action">1.村寨概述-------------------------------------------------1</a>
+                    <a href="javascript:pageTo(40)" class="list-group-item list-group-item-action">2.村落及居住建筑分析-----------------------------------37</a>
+                    <a href="javascript:pageTo(56)" class="list-group-item list-group-item-action">3.建筑遗传特征-------------------------------------------53</a>
+                </div>
+            </div>
+        </div>
+
+        <!--封底-->
+        <div class="hard">
+            <div class="pic-page">
+                <img src="../turn_img/backgr.jpg" alt=" " width="525" height="700">
+            </div>
+        </div>
+        <div class="hard">
+            <div class="pic-page">
+                <img src="../turn_img/backgr.jpg" alt=" " width="525" height="700">
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

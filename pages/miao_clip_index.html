@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>苗族民居建筑单体模型展示</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+
+	<link type="text/css" href="../css/caps.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<script src="../lib/three.js"></script>
+	<script src="../lib/ColladaLoader.js"></script>
+	<script src="../lib/OrbitControls.js"></script>
+
+	<script src="../lib/threeExtensions.js"></script>
+
+	<script src="../js/caps.js"></script>
+	<script src="../js/schedule.js"></script>
+	<script src="../js/shader.js"></script>
+	<script src="../js/uniforms.js"></script>
+	<script src="../js/material.js"></script>
+	<script src="../js/planeGeometry.js"></script>
+	<script src="../js/selectionBoxFace.js"></script>
+	<script src="../js/selectionBoxLine.js"></script>
+	<script src="../js/selection.js"></script>
+	<script src="../js/picking.js"></script>
+	<script src="../js/miao_simulation.js"></script>
+
+	<script src="../lib/d3.v5.min.js"></script>
+
+</head>
+<body>
+<div class="btn-group" style="position: fixed!important;">
+	<button type="button" class="btn btn-secondary" id="blast">构成体系</button>
+	<button type="button" class="btn btn-secondary" id="drag">动态拆分</button>
+	<button type="button" class="btn btn-secondary" id="clip" disabled>剖面框</button>
+	<button type="button" class="btn btn-secondary" id="home">返回主页</button>
+</div>
+	<div id="controls">
+		<label><input id="showCaps" type="checkbox" checked /> Show caps</label>
+	</div>
+	<script>new CAPS.Simulation()</script>
+<script>
+	event();
+	function event() {
+		d3.select('#drag').on('click', function () {
+			location.href = "./miao_drag_index.html"
+		});
+
+		d3.select('#blast').on('click', function () {
+			location.href = "./miao_blast_index.html"
+		});
+
+		d3.select('#home').on('click', function () {
+			location.href = "../index.html"
+		});
+	}
+</script>
+</body>
+</html>
+

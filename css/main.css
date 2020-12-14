@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: #5e5e5e;
+}
+
+.container {
+    width: 1050px; /*翻开书两页纸的总宽*/
+    height: 700px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 50%; /*相对整个body的50%*/
+    left: 50%; /*相对整个body的50%*/
+    margin: auto;
+    transform: translate(-50%, -50%); /*相对自己的50%向下为正 向右为正*/
+}
+
+.btn-group {
+    transform: translate(-50%, 0);
+}
+
+.pic-page {
+    margin: auto;
+}
+
+#flipbook .page {
+    background-color: #ffdeac;
+}
+
+#flipbook .shadow {
+    box-shadow: 0 0 30px black;
+}
+
+#flipbook .page:first-child {
+    display: flex;
+}
+
+.my-content {
+    padding: 50px 40px;
+    height: 700px;
+    position: absolute;
+}
+
+#myContainer {
+    position: absolute;
+}
+
+h3 {
+    text-align: center; /*居中显示*/
+    line-height: 2; /*让文字有间隙*/
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="183f39e8-5066-48b2-8cb2-4ded4ac0999b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1iiDZIMoqH9OPlo6NsKWqOPFfzG" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\phpstudy_pro\WWW\20201011\models\tu_models" />
+      <recent name="E:\phpstudy_pro\WWW\20201011\pages" />
+      <recent name="C:\Users\Administrator\Desktop\20201011\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\phpstudy_pro\WWW\20201026\js" />
+      <recent name="E:\phpstudy_pro\WWW\20201026\pages" />
+      <recent name="C:\Users\Administrator\Desktop\20201011\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="183f39e8-5066-48b2-8cb2-4ded4ac0999b" name="Default Changelist" comment="" />
+      <created>1602381573126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602381573126</updated>
+      <workItem from="1602381575442" duration="1378000" />
+      <workItem from="1602416889941" duration="2990000" />
+      <workItem from="1602486688499" duration="606000" />
+      <workItem from="1602553551565" duration="21898000" />
+      <workItem from="1603267074326" duration="1629000" />
+      <workItem from="1603335738436" duration="2475000" />
+      <workItem from="1603679465179" duration="213000" />
+      <workItem from="1603679853908" duration="32000" />
+      <workItem from="1603679915227" duration="20000" />
+      <workItem from="1603680089180" duration="13000" />
+      <workItem from="1603696282419" duration="1326000" />
+      <workItem from="1603697741182" duration="269000" />
+      <workItem from="1603700807413" duration="7747000" />
+      <workItem from="1603717612552" duration="78000" />
+      <workItem from="1603799907334" duration="4404000" />
+      <workItem from="1603847248283" duration="11155000" />
+      <workItem from="1603882106358" duration="886000" />
+      <workItem from="1603883046622" duration="27000" />
+      <workItem from="1603883195653" duration="51000" />
+      <workItem from="1603959939881" duration="285000" />
+      <workItem from="1604632260243" duration="978000" />
+      <workItem from="1605598449685" duration="419000" />
+      <workItem from="1605789736964" duration="686000" />
+      <workItem from="1607839399231" duration="546000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

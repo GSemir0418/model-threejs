@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+    <title>苗族民居建筑单体模型展示</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="../lib/three.min.js"></script>
+    <script src="../lib/MTLLoader.js"></script>
+    <script src="../lib/OBJLoader.js"></script>
+    <script src="../lib/d3.v5.min.js"></script>
+    <script src="../lib/OrbitControls.js"></script>
+    <script src="../lib/TransformControls.js"></script>
+    <script src="../lib/DragControls.js"></script>
+</head>
+<body>
+<div id="container">
+
+    <div class="btn-group" style="position: fixed!important;">
+        <button type="button" class="btn btn-secondary" id="blast">构成体系</button>
+        <button type="button" class="btn btn-secondary" id="drag" disabled>动态拆分</button>
+        <button type="button" class="btn btn-secondary" id="clip">剖面框</button>
+        <button type="button" class="btn btn-secondary" id="home">返回主页</button>
+    </div>
+
+    <div id="info">
+        <p>模型详情<span id="info_close">x</span></p>
+        <div id="info_content"></div>
+    </div>
+
+</div>
+</body>
+</html>
+<script src="../js/miao_model2.js"></script>
